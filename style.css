@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    color: gray;
+    border: 3px solid;
+    border-color: blue;
+}
+
+p {
+    background: #CEE3F6;
+    color: blue;
+    font-style: italic;
+}
+            
+p.param {
+    font-style: normal;
+    text-align: left;
+}
+
+div.calculatrice {
+    background: #58ACFA;
+    color: white;
+    font-size: 20pt;
+    padding: 15px;
+    border-radius: 40px;
+    margin-top: 20px;
+    overflow: hidden; /* Masque tout contenu dépassant de la zone */
+    white-space: nowrap; /* empeche de revenir à la ligne */
+}
+
+div.calculatrice p.erreur {
+    color: red;
+    background-color: grey;
+}
+
+.btn
+{
+    transition: transform 1s, background-color 1s;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 0.6em;
+    &:hover
+    {
+        transform: scale(1.2);
+        background-color:antiquewhite;
+    }
+}
+
+.defile, .erreur
+{
+    animation: scroll-text 10s linear ;
+}
+
+@keyframes scroll-text {
+    0% { transform: translateX(100%); } /* Départ complètement à droite */
+    100% { transform: translateX(0%); } /* Arrivée complètement à gauche */
+}
