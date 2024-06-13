@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Une petite calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <h1> Calculatrice </h1>
+    
+    <p> Une petite calculatrice minimaliste pour pratiquer la programmation web ! Vous ne pouvez faire qu'une opération entre deux nombres.
+    </p>
+    
+    <div class="calculatrice">
+        Entrez deux nombres et l'opération choisie :
+        <form name="calc" onsubmit="fomulairesoumis(event)">
+            nombre1 : <input name="nombre1" type="text" placeholder="entrez un nombre" />
+            <br />
+            <select name="choix">
+                <option value="plus">+</option>
+                <option value="moins">-</option>
+                <option value="div">/</option>
+                <option value="mult">*</option>
+            </select>
+            <br />
+            nombre2 : <input name="nombre2" type="text" placeholder="entrez un nombre" />
+            <br /><br />
+            <input type="submit" class="btn" name="action" value="calculer"></input>
+        </form>
+        <p id="result" class="defile"></p>
+    </div>
+    <p id="params" class="param"></p>
+</body>
+<script src="script.js"></script>
+</html>
