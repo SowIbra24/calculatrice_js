@@ -54,6 +54,7 @@ div.calculatrice p.erreur {
 .defile, .erreur
 {
     animation: scroll-text 10s linear ;
+    
 }
 
 @keyframes scroll-text {
